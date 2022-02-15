@@ -1,5 +1,18 @@
 <template>
-  <div class="contact">
-    <h1></h1>
+  <div class="row">
+    <div class="col-md-12">
+     <h1>Contact</h1>
+      <peta />
+    </div>
   </div>
 </template>
+
+<script>
+import peta from '../components/peta.vue'
+export default {
+  components : {
+    peta,
+  }
+  
+}
+</script>

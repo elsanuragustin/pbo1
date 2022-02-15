@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import "bootstrap/dist/css/bootstrap.min.css";
 import VueSupabase from "vue-supabase";
+
 
 Vue.use(VueSupabase, {
   supabaseUrl: "https://axikrqxpfcovlhlqfqla.supabase.co",
@@ -9,9 +11,9 @@ Vue.use(VueSupabase, {
   supabaseOptions: {},
 });
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
   router,
-  render: h => h(App)
-}).$mount('#app')
+  render: h => h(App),
+}).$mount('#app');
